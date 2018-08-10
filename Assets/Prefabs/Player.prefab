@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 4605055881572162}
   - component: {fileID: 68394774916725628}
   - component: {fileID: 50213645822246008}
+  - component: {fileID: 114533754377494828}
   m_Layer: 0
   m_Name: Feet
   m_TagString: Untagged
@@ -149,7 +150,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -174,6 +175,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114533754377494828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848605079903670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266c23e2b06299744bf043b4f030ea48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114607999789606648
 MonoBehaviour:
   m_ObjectHideFlags: 1

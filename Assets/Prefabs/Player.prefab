@@ -39,6 +39,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4605055881572162}
+  - component: {fileID: 68394774916725628}
+  - component: {fileID: 50213645822246008}
   m_Layer: 0
   m_Name: Feet
   m_TagString: Untagged
@@ -73,6 +75,26 @@ Transform:
   m_Father: {fileID: 4553447308589678}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50213645822246008
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848605079903670}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!50 &50412391308241086
 Rigidbody2D:
   serializedVersion: 4
@@ -118,6 +140,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.74, y: 3.2600996}
   m_EdgeRadius: 0
+--- !u!68 &68394774916725628
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848605079903670}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.1395233, y: -0.21953785}
+  - {x: 1.1299758, y: -0.23862743}
 --- !u!95 &95063097279753724
 Animator:
   serializedVersion: 3

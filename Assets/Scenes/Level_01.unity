@@ -23195,6 +23195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13aac8454f7918e4485ea1b936e6d0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSFX:
+    coinPickup: {fileID: 8300000, guid: 09d83a25650d09445907346ce2725318, type: 3}
+  audioPlayer:
+    jump: {fileID: 8300000, guid: 58abae3f3558c7645b0959bb5c1b0e74, type: 3}
 --- !u!1 &1485291192
 GameObject:
   m_ObjectHideFlags: 0

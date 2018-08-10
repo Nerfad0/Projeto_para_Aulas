@@ -7,5 +7,5 @@ using System;
 
 public class AudioPlayer{
 
-	public AudioClip coinPickup;
+	public AudioClip jump;
 }

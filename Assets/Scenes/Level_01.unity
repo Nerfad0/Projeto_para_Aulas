@@ -798,6 +798,12 @@ MonoBehaviour:
   playerPrefab: {fileID: 1640036573253158, guid: e677d86c20919104b9b785727a0434bf,
     type: 2}
   timeToRespawn: 2
+  ui:
+    hud:
+      txtCoinCount: {fileID: 131876088}
+      txtLifeCount: {fileID: 2015912636}
+      txtTimer: {fileID: 806614391}
+      hudPanel: {fileID: 332213028}
 --- !u!4 &592266307
 Transform:
   m_ObjectHideFlags: 0

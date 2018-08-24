@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [Serializable]
 public class UI {
 	[Serializable]
-	public class HUD{
+	public class HUD {
 
 		[Header("Text")]
 		public Text txtCoinCount;
@@ -19,7 +19,7 @@ public class UI {
 	}
 	
 	[Serializable]
-	public class GameOver{
+	public class GameOver {
 
 		[Header("Text")]
 		public Text txtCoinCount;
@@ -29,6 +29,18 @@ public class UI {
 		public GameObject gameOverPanel;
 	}
 
+	[Serializable]
+	public class LevelComplete {
+
+		[Header("Text")]
+		public Text txtCoinCount;
+		public Text txtTimer;
+
+		[Header("Other")]
+		public GameObject LevelCompletePanel;
+	}
+
 	public GameOver gameOver;
 	public HUD hud;
+	public LevelComplete levelComplete;
 }

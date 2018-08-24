@@ -117,4 +117,12 @@ public class GM : MonoBehaviour {
 		ui.gameOver.txtTimer.text = "Timer: " + timeLeft.ToString("F1");
 		ui.gameOver.gameOverPanel.SetActive(true);
 	}
+
+	public void LevelComplete(){
+		Destroy(player.gameObject);
+		timerOn = false;
+		ui.levelComplete.txtCoinCount.text = "Coins: " + data.coinCount;
+		ui.levelComplete.txtTimer.text = "Timer: " + timeLeft.ToString("F1");
+		ui.levelComplete.LevelCompletePanel.SetActive(true);
+	}
 }

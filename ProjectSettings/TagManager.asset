@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - MovingPlatform
   - TurnArround
+  - Enemy
   layers:
   - Default
   - TransparentFX

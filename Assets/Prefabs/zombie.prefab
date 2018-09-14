@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4033501076756900}
   - component: {fileID: 61935991577143850}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TurnToRight
   m_TagString: TurnArround
   m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,9 +40,9 @@ GameObject:
   - component: {fileID: 61070786503318290}
   - component: {fileID: 50928503875344452}
   - component: {fileID: 114588839392322920}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: zombie
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4783537204428018}
   - component: {fileID: 61402583038973384}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TurnToLeft
   m_TagString: TurnArround
   m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}

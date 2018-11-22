@@ -10,6 +10,7 @@ TagManager:
   - MovingPlatform
   - TurnArround
   - Enemy
+  - Shuriken
   layers:
   - Default
   - TransparentFX

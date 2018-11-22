@@ -13,6 +13,7 @@ public class UI {
 		public Text txtCoinCount;
 		public Text txtLifeCount;
 		public Text txtTimer;
+		public Text txtShurikenCount;
 
 		[Header("Other")]
 		public GameObject hudPanel;

@@ -23,6 +23,7 @@ public class PlayerCtrl : MonoBehaviour {
 	Animator anim;
 
 	bool isJumping = false;
+	bool isAttacking = false;
 	public Transform feet;	
 	public float feetWidth = 0.5f;
 	public float feetHeight = 0.1f;
@@ -80,13 +81,21 @@ public class PlayerCtrl : MonoBehaviour {
 		
 		if(!isJumping){
 			anim.SetInteger("State", 2);
-		}		
+		}
+
+		if(!isAttacking){
+			anim.SetInteger("State", 2);
+		}			
 	}
 
 	void StopMovingHorizontal()	{
 		rb.velocity = new Vector2(0f, rb.velocity.y);
 		
 		if(!isJumping){
+			anim.SetInteger("State", 0);
+		}	
+
+		if(!isAttacking){
 			anim.SetInteger("State", 0);
 		}	
 	}
@@ -137,6 +146,12 @@ public class PlayerCtrl : MonoBehaviour {
 		case "Finish": 
 			GM.instance.LevelComplete();
 		break;
+
+		case "Shuriken":
+			GM.instance.IncrementShurikenCount();
+			Destroy(other.gameObject);
+		break;
 		}
 	}
+	
 }

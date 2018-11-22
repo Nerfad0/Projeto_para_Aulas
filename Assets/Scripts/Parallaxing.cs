@@ -10,7 +10,7 @@ public class Parallaxing : MonoBehaviour {
     private Vector3 previousCamPos;
 
     void Awake() {
-        cam = Camera.main.transform;
+        //cam = Camera.main.transform;
     }
 
 

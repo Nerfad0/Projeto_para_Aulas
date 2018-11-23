@@ -24,7 +24,9 @@ public class PlayerCtrl : MonoBehaviour {
 
 	bool isJumping = false;
 	bool isAttacking = false;
-	public Transform feet;	
+	public Transform feet;
+	public Transform RightShoot;
+	public Transform LeftShoot;	
 	public float feetWidth = 0.5f;
 	public float feetHeight = 0.1f;
 
@@ -33,6 +35,13 @@ public class PlayerCtrl : MonoBehaviour {
 
 	bool canDoubleJump = false;
 	public float delayForDoubleJump = 0.2f;
+
+	public float delayForShoot = 0.2f;
+
+	float shootTime = 0f;
+
+	public GameObject RightShootPrefab;
+	public GameObject LeftShootPrefab;
 
 
 	// Use this for initialization
@@ -47,7 +56,11 @@ public class PlayerCtrl : MonoBehaviour {
 
 	}
 	// Update is called once per frame
-	void Update () {
+	void Update () {		
+
+		if (shootTime < delayForShoot) {
+			shootTime += Time.deltaTime;
+		}
 
 		if(transform.position.y < GM.instance.yMinLive){
 			GM.instance.KillPlayer();
@@ -67,16 +80,40 @@ public class PlayerCtrl : MonoBehaviour {
 		if (Input.GetButtonDown("Jump"))	{
 			Jump();
 		}
+
+		if (Input.GetButtonDown("Fire1"))	{
+			Shoot();
+		}
 	}
 
+	void Shoot() {
+
+		if(delayForShoot > shootTime){
+			return;
+		}
+
+		shootTime = 0f;
+
+		if (sr.flipX == true){
+			AudioManager.instance.PlayShurikenSound(LeftShoot.gameObject);
+			Instantiate(LeftShootPrefab, LeftShoot.position, Quaternion.identity);
+		}
+		else{
+			AudioManager.instance.PlayShurikenSound(RightShoot.gameObject);
+			Instantiate(RightShootPrefab, RightShoot.position, Quaternion.identity);
+		}		
+		
+	}
 	void MoveHorizontal(float speed)	{
 		rb.velocity = new Vector2(speed, rb.velocity.y);
 
 		if (speed < 0f){
 			sr.flipX = true;
+			
 		}
 		else if (speed > 0f){
 			sr.flipX = false;
+			
 		}
 		
 		if(!isJumping){

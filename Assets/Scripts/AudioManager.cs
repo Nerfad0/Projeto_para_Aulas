@@ -27,6 +27,10 @@ public class AudioManager : MonoBehaviour {
 		AudioSource.PlayClipAtPoint(audioSFX.fail, obj.transform.position);
 	}
 
+	public void PlayShurikenSound(GameObject obj){
+		AudioSource.PlayClipAtPoint(audioSFX.shuriken, obj.transform.position);
+	}
+
 	
 
 }

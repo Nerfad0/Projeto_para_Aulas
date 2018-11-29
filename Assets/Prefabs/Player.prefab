@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61152137789108578}
   m_Layer: 0
   m_Name: RightShoot
-  m_TagString: Shoot
+  m_TagString: Untagged
   m_Icon: {fileID: 7240890024493199768, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 50742667713235626}
   m_Layer: 0
   m_Name: LeftShoot
-  m_TagString: Shoot
+  m_TagString: Untagged
   m_Icon: {fileID: 571167235653111936, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640036573253158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.726924, y: -1.9094747, z: -0.27}
+  m_LocalPosition: {x: -9.260448, y: -1.4016025, z: -0.27}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 4605055881572162}

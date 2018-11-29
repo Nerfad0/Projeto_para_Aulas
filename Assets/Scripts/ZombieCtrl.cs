@@ -28,6 +28,9 @@ public class ZombieCtrl : MonoBehaviour {
 		if (other.gameObject.CompareTag("TurnArround")) {
 			Flip();
 		}
+		if (other.gameObject.CompareTag("Untagged")) {
+			Destroy(this.gameObject);
+		}
 	}
 
 	void Flip() {

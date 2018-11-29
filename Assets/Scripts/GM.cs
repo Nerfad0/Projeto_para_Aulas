@@ -48,6 +48,10 @@ public class GM : MonoBehaviour {
 		DisplayHudData();
 	}
 
+	public int ShurikenCount() {
+		return data.shurikenCount;
+	}
+
 	public void RestartLevel(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
@@ -90,6 +94,9 @@ public class GM : MonoBehaviour {
 	}
 	public void IncrementShurikenCount(){
 		data.shurikenCount++;
+	}
+	public void DecreseShurikenCount(){
+		data.shurikenCount--;
 	}
 
 	public void RespawnPlayer() {

@@ -8,5 +8,5 @@ public class GameData {
 
 	public int coinCount = 0;
 	public int lifeCount = 3;
-	public int shurikenCount = 2;
+	public  int shurikenCount = 2;
 }

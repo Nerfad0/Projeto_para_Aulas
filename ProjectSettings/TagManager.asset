@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Shuriken
   - Shoot
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

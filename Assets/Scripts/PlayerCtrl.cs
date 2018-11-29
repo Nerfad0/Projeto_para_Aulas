@@ -11,6 +11,7 @@ Hurt - 3
 Attack - 4
 Falling - 5
 
+
  */
 
 public class PlayerCtrl : MonoBehaviour {
@@ -36,7 +37,7 @@ public class PlayerCtrl : MonoBehaviour {
 	bool canDoubleJump = false;
 	public float delayForDoubleJump = 0.2f;
 
-	public float delayForShoot = 0.2f;
+	public float delayForShoot = 0.01f;
 
 	float shootTime = 0f;
 
@@ -48,7 +49,7 @@ public class PlayerCtrl : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		sr = GetComponent<SpriteRenderer>();
-		anim = GetComponent<Animator>();		
+		anim = GetComponent<Animator>();
 	}
 	
 	void OnDrawGizmos() 	{
@@ -82,7 +83,9 @@ public class PlayerCtrl : MonoBehaviour {
 		}
 
 		if (Input.GetButtonDown("Fire1"))	{
-			Shoot();
+			if(GM.instance.ShurikenCount() > 0){
+				Shoot();
+			}
 		}
 	}
 
@@ -97,12 +100,15 @@ public class PlayerCtrl : MonoBehaviour {
 		if (sr.flipX == true){
 			AudioManager.instance.PlayShurikenSound(LeftShoot.gameObject);
 			Instantiate(LeftShootPrefab, LeftShoot.position, Quaternion.identity);
+			GM.instance.DecreseShurikenCount();
 		}
 		else{
 			AudioManager.instance.PlayShurikenSound(RightShoot.gameObject);
 			Instantiate(RightShootPrefab, RightShoot.position, Quaternion.identity);
+			GM.instance.DecreseShurikenCount();
 		}		
 		
+
 	}
 	void MoveHorizontal(float speed)	{
 		rb.velocity = new Vector2(speed, rb.velocity.y);
@@ -172,13 +178,18 @@ public class PlayerCtrl : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 
-		switch (other.gameObject.tag) {
+		switch (other.gameObject.tag) { 
 		case "Coin":
 			AudioManager.instance.PlayCoinPickupSound(other.gameObject);
 			SFXManager.instance.ShowCoinParticles(other.gameObject);
 			GM.instance.IncrementCoinCount();
 			Destroy(other.gameObject);
 		break;
+
+		case "CheckPoint": 
+			GameObject obj = GameObject.Find("SpawnPoint");
+			obj.transform.position = other.transform.position;
+			break;
 
 		case "Finish": 
 			GM.instance.LevelComplete();

@@ -22,7 +22,13 @@ public class LevelCompleteCtrl : MonoBehaviour {
 	public float animDelay;
 	// Use this for initialization
 	void Start () {
+		score = GM.instance.Score();
+		
 		txtScore.text = score.ToString();
+
+		if (score >= scoreForNextLevel) {
+			AudioManager.instance.PlayLevelCompleteSound(gameObject);
+		}
 
 		Invoke("MostrarEstrelas", animStartDelay);
 	}

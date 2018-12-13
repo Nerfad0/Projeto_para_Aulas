@@ -324,7 +324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &91996196
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24323,6 +24323,22 @@ Prefab:
       propertyPath: ui.levelComplete.LevelCompletePanel
       value: 
       objectReference: {fileID: 1589593637}
+    - target: {fileID: 114593476324756756, guid: 2ea1f2157841f6343b75b3d8cda08d7e,
+        type: 2}
+      propertyPath: audioSFX.levelComplete
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ca8ca90b59d41545a644395e5d29f1a, type: 3}
+    - target: {fileID: 114593476324756756, guid: 2ea1f2157841f6343b75b3d8cda08d7e,
+        type: 2}
+      propertyPath: audioSFX.star
+      value: 
+      objectReference: {fileID: 8300000, guid: c9d2aeb005041014e8112054056ea486, type: 3}
+    - target: {fileID: 114426021472248666, guid: 2ea1f2157841f6343b75b3d8cda08d7e,
+        type: 2}
+      propertyPath: starParticles
+      value: 
+      objectReference: {fileID: 1310928790686294, guid: 16c8ae8a7f0590b46a17e72a72f49596,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ea1f2157841f6343b75b3d8cda08d7e, type: 2}
   m_IsPrefabParent: 0

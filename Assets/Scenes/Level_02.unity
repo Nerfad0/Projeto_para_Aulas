@@ -1387,7 +1387,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 608494884}
   m_OnClick:
     m_PersistentCalls:
@@ -2337,6 +2337,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 592266306}
+    - target: {fileID: 224921738203994754, guid: 6b161d56e9ba6354881e605c123d16b4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -397.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 224921738203994754, guid: 6b161d56e9ba6354881e605c123d16b4,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 75.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 224422166232043418, guid: 6b161d56e9ba6354881e605c123d16b4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -397.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 224422166232043418, guid: 6b161d56e9ba6354881e605c123d16b4,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 75.528
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b161d56e9ba6354881e605c123d16b4, type: 2}
   m_IsPrefabParent: 0

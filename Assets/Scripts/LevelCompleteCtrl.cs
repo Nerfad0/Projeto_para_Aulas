@@ -23,7 +23,7 @@ public class LevelCompleteCtrl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		score = GM.instance.Score();
-		
+
 		txtScore.text = score.ToString();
 
 		if (score >= scoreForNextLevel) {
@@ -31,6 +31,10 @@ public class LevelCompleteCtrl : MonoBehaviour {
 		}
 
 		Invoke("MostrarEstrelas", animStartDelay);
+	}
+
+	void IniciarMostrarEstrelas(){
+		StartCoroutine("MostrarEstrelas");
 	}
 	
 

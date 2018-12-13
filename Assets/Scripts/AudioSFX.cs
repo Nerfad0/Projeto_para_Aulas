@@ -14,4 +14,8 @@ public class AudioSFX{
 	public AudioClip shuriken;
 
 	public AudioClip kill;
+
+	public AudioClip star;
+
+	public AudioClip levelComplete;
 }

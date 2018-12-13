@@ -39,8 +39,13 @@ public class LevelCompleteCtrl : MonoBehaviour {
 						if (score >= scoreForThreeStar){
 							ExecutarAnimacao(Star3);
 							yield return new WaitForSeconds(animDelay);
+				}
 			}
-			}
+		}
+
+		if (score >= scoreForNextLevel) {
+			btnNext.interactable = true;
+			Plim(btnNext.gameObject);
 		}
 	}
 
@@ -54,5 +59,12 @@ public class LevelCompleteCtrl : MonoBehaviour {
 		//Reduzir o tamanho da estrela
 		RectTransform t = starImg.rectTransform;
 		t.DOSizeDelta(new Vector2(100f, 100f), 0.5f, false);
+
+		Plim(starImg.gameObject);
+	}
+
+	void Plim(GameObject obj){
+		SFXManager.instance.ShowStarParticles(obj);
+		AudioManager.instance.PlayStarSound(obj);
 	}
 }

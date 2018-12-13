@@ -324,7 +324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &91996196
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2175,11 +2175,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4496665852295046, guid: b6ecfa772a6fbba40b9a1defce0aec9f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.46
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 4496665852295046, guid: b6ecfa772a6fbba40b9a1defce0aec9f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.9
+      value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: 4496665852295046, guid: b6ecfa772a6fbba40b9a1defce0aec9f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -24339,6 +24339,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1310928790686294, guid: 16c8ae8a7f0590b46a17e72a72f49596,
         type: 2}
+    - target: {fileID: 114195729677695750, guid: 2ea1f2157841f6343b75b3d8cda08d7e,
+        type: 2}
+      propertyPath: ui.levelComplete.levelCompleteStarPanel
+      value: 
+      objectReference: {fileID: 91996195}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ea1f2157841f6343b75b3d8cda08d7e, type: 2}
   m_IsPrefabParent: 0

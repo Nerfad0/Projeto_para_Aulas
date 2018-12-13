@@ -1902,6 +1902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinParticles: {fileID: 1310928790686294, guid: 440922fd9a33591498f238a7912b9656,
     type: 2}
+  killParticles: {fileID: 1028671644449906, guid: 4374da0a2905fee4e823a7889a739f79,
+    type: 2}
 --- !u!1 &679053066
 GameObject:
   m_ObjectHideFlags: 0
@@ -18470,8 +18472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61.5, y: 33.695}
-  m_SizeDelta: {x: 178, y: 49.7}
+  m_AnchoredPosition: {x: -31.2, y: 33.695}
+  m_SizeDelta: {x: 238.6, y: 49.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746599119
 MonoBehaviour:
@@ -19613,6 +19615,7 @@ MonoBehaviour:
     coinPickup: {fileID: 8300000, guid: 09d83a25650d09445907346ce2725318, type: 3}
     fail: {fileID: 8300000, guid: 06c7c32202395594db1ce26c3424ca1a, type: 3}
     shuriken: {fileID: 8300000, guid: bbffb8240b6569a42b0859f96e62db92, type: 3}
+    kill: {fileID: 8300000, guid: 18c133301e501e4408fedb591ac1b19c, type: 3}
   audioPlayer:
     jump: {fileID: 8300000, guid: 58abae3f3558c7645b0959bb5c1b0e74, type: 3}
 --- !u!1 &1202343818

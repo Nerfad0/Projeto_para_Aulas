@@ -8,6 +8,8 @@ public class SFXManager : MonoBehaviour {
 
 	public GameObject coinParticles;
 
+	public GameObject killParticles;
+
 	void Awake() {
 		if (instance == null){
 			instance = this;
@@ -18,4 +20,7 @@ public class SFXManager : MonoBehaviour {
 		Instantiate(coinParticles, obj.transform.position, Quaternion.identity);
 	}
 
+	public void ShowKillParticles(GameObject obj){
+		Instantiate(killParticles, obj.transform.position, Quaternion.identity);
+	}
 }

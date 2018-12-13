@@ -95,6 +95,8 @@ public class PlayerCtrl : MonoBehaviour {
 			return;
 		}
 
+		anim.Play("ninja_attack");
+		
 		shootTime = 0f;
 
 		if (sr.flipX == true){

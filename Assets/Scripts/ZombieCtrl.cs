@@ -46,6 +46,8 @@ public class ZombieCtrl : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.tag == "Shoot") {
 			Destroy(this.gameObject);
+			AudioManager.instance.PlayKillSound(transform.gameObject);
+			SFXManager.instance.ShowKillParticles(transform.gameObject);
 		}
 	}
 }

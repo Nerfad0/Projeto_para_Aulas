@@ -361,7 +361,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   delayForDoubleJump: 0.2
-  delayForShoot: 2
+  delayForShoot: 0.4
   RightShootPrefab: {fileID: 1924563851351656, guid: 41702ade1a28fd8499cd90ed1f1f91b0,
     type: 2}
   LeftShootPrefab: {fileID: 1417202760810818, guid: 323c43a7f0161e547b4c093ff6324319,
